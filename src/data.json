@@ -74,7 +74,8 @@
         "tags": ["Next.js", "Supabase", "Tailwind", "Stripe", "Firebase"],
         "links": [
           { "label": "GitHub", "href": "https://github.com/senior-pj-team/peer-tutoring" },
-          { "label": "Demo Video", "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI" }
+          { "label": "Demo Video", "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI" },
+          { "label": "Live", "href": "https://peertube-digital.vercel.app/login" }
         ]
       },
       {
