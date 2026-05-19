@@ -1,7 +1,7 @@
 const ExperienceCard = ({ period, position, org, description, bgColor, textColor, borderColor, logo }) => {
   return (
     <div 
-    className={`snap-start shrink-0 w-[90vw] md:w-[30vw] rounded-4xl border p-8 flex flex-col min-h-[480px]`}
+    className={`snap-start shrink-0 w-[90vw] md:w-[50vw] lg:w-[30vw] rounded-4xl border p-8 flex flex-col min-h-[480px]`}
     style={{ backgroundColor: bgColor, borderColor }}>
       
       {/* Logo — fixed at top */}

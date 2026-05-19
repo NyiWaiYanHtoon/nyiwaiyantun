@@ -5,13 +5,14 @@ const AboutSection = ({ data }) => {
 
   return (
     <Section id="meet-you" title="Nice to Meet You">
-      <div className="mb-12 mx-8 md:mx-58">
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+      <div className="mb-12 mx-0 md:mx-20 lg:mx-58">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {heading} <span className="text-primary">{headingAccent}</span>
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-start mx-8 md:mx-58">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start mx-0 md:mx-20 lg:mx-58">
+
         {/* Left — photo + bio */}
         <div className="flex flex-col gap-6">
           <div className="w-full aspect-[4/3] rounded-2xl bg-text/5 border border-text/10 overflow-hidden">
@@ -24,15 +25,15 @@ const AboutSection = ({ data }) => {
             )}
           </div>
           {bio.map((paragraph, i) => (
-            <p key={i} className="text-muted leading-relaxed">{paragraph}</p>
+            <p key={i} className="text-muted leading-relaxed text-sm md:text-base">{paragraph}</p>
           ))}
         </div>
 
         {/* Right — facts table */}
         <div className="flex flex-col divide-y divide-text/10">
           {facts.map(({ label, value }) => (
-            <div key={label} className="pb-7 pt-3 grid grid-cols-[160px_1fr] gap-5 items-start">
-              <span className="text-xs text-muted tracking-[0.15em] uppercase font-mono pt-0.5">
+            <div key={label} className="py-4 flex flex-col sm:grid sm:grid-cols-[140px_1fr] gap-1 sm:gap-5 items-start">
+              <span className="text-xs text-muted tracking-[0.15em] uppercase font-mono">
                 {label}
               </span>
               <span className="text-text text-sm leading-relaxed">{value}</span>
