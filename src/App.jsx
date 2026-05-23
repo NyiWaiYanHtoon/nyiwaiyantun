@@ -70,7 +70,7 @@ export default function App() {
       <ConnectSection data={data.connect} email={data.meta.email} stickyTitle={NAV_LINKS[4].label} />
 
       {/* ── FOOTER ── */}
-      <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs">
+      <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs font-mono">
         <span>{data.meta.copyright}</span>
         <span>{data.meta.footerNote}</span>
       </footer>
