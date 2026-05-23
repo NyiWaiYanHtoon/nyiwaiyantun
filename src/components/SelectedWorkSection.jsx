@@ -43,7 +43,7 @@ const SelectedWorkSection = ({ data }) => {
             <button
               key={id}
               onClick={() => scrollToProject(id)}
-              className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 ${
+              className={`px-4 py-1.5 rounded-full text-xs tracking-wide transition-all duration-200 font-mono ${
                 activeProject === id
                   ? "bg-primary text-background font-semibold"
                   : "text-muted hover:text-text"

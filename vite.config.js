@@ -10,9 +10,6 @@ export default defineConfig({
   ],
   theme: {
     extend: {
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-      },
       colors: {
         'primary': '#1ab8b8',
         'background': '#000000',

@@ -54,7 +54,7 @@ const Navbar = ({ nav_links, activeLink, onLinkClick }) => {
                   onLinkClick(href);
                   setMenuOpen(false);
                 }}
-                className="text-2xl font-medium text-text hover:text-primary transition-colors"
+                className="text-2xl font-medium text-text hover:text-primary transition-colors font-mono"
               >
                 {label}
               </button>
