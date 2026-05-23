@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Section from "./Section";
 import { ArrowUpRight } from "lucide-react";
 
-const SelectedWorkSection = ({ data }) => {
+const SelectedWorkSection = ({ data, stickyTitle }) => {
   const { heading, headingAccent, subheading, projects } = data;
   const [activeProject, setActiveProject] = useState(projects[0].id);
   const projectRefs = useRef({});
@@ -25,7 +25,7 @@ const SelectedWorkSection = ({ data }) => {
     projectRefs.current[id]?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <Section id="selected-work" title="Selected Work">
+    <Section id="selected-work" title={stickyTitle}>
 
       {/* Header */}
       <div className="mb-16 mx-8 md:mx-58">

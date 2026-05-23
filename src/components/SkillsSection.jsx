@@ -6,11 +6,11 @@ const TAG_ROTATIONS = [
   "-rotate-5", "rotate-4", "-rotate-2", "rotate-2",
 ];
 
-const SkillsSection = ({ data }) => {
+const SkillsSection = ({ data, stickyTitle }) => {
   const { heading, headingAccent, subheading, items } = data;
 
   return (
-    <Section id="what-i-do" title="What I Do">
+    <Section id="what-i-do" title={stickyTitle}>
       <div className="mb-16 mx-8 md:mx-58">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}<br />

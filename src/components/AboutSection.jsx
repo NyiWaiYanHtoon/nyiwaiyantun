@@ -1,10 +1,10 @@
 import Section from "./Section";
 
-const AboutSection = ({ data }) => {
+const AboutSection = ({ data, stickyTitle }) => {
   const { heading, headingAccent, bio, photo, facts, colleagueTags } = data;
 
   return (
-    <Section id="meet-you" title="Nice to Meet You">
+    <Section id="meet-you" title={stickyTitle}>
       <div className="mb-12 mx-0 md:mx-20 lg:mx-58">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {heading} <span className="text-primary">{headingAccent}</span>

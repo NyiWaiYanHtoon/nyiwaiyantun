@@ -1,11 +1,11 @@
 import Section from "./Section";
 import ExperienceCard from "./ExperienceCard";
 
-const ExperienceSection = ({ data }) => {
+const ExperienceSection = ({ data , stickyTitle}) => {
   const { heading, headingAccent, headingSuffix, subheading, items } = data;
 
   return (
-    <Section id="experience" title="Experience">
+    <Section id="experience" title={stickyTitle}>
       <div className="mb-16 mx-8 md:mx-58">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}<br />

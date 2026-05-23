@@ -3,7 +3,7 @@ import { ArrowUpRight, Check, Copy } from "lucide-react";
 
 import Section from "./Section";
 
-const ConnectSection = ({ data, email }) => {
+const ConnectSection = ({ data, email, stickyTitle }) => {
   const { heading, headingAccent, subheading, ctaLabel, socialLinks } = data;
   const [copied, setCopied] = useState(false);
 
@@ -14,7 +14,7 @@ const ConnectSection = ({ data, email }) => {
   };
 
   return (
-    <Section id="connect" title="Let's Connect">
+    <Section id="connect" title={stickyTitle}>
       <div className="mb-12 mx-8 md:mx-58">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}

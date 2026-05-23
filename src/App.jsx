@@ -63,11 +63,11 @@ export default function App() {
 
       {/* ── SECTIONS ── */}
       <HeroSection data={data.hero} />
-      <SkillsSection data={data.skills} />
-      <SelectedWorkSection data={data.work} />
-      <ExperienceSection data={data.experience} />
-      <AboutSection data={data.about} />
-      <ConnectSection data={data.connect} email={data.meta.email} />
+      <SkillsSection data={data.skills} stickyTitle={NAV_LINKS[0].label} />
+      <SelectedWorkSection data={data.work} stickyTitle={NAV_LINKS[1].label} />
+      <ExperienceSection data={data.experience} stickyTitle={NAV_LINKS[2].label} />
+      <AboutSection data={data.about} stickyTitle={NAV_LINKS[3].label} />
+      <ConnectSection data={data.connect} email={data.meta.email} stickyTitle={NAV_LINKS[4].label} />
 
       {/* ── FOOTER ── */}
       <footer className="px-8 md:px-20 py-8 border-t border-text/10 flex items-center justify-between text-muted text-xs">
