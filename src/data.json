@@ -13,8 +13,9 @@
     "badge": "Available for work",
     "heading": ["Hi, I'm Romand.", "I build solutions", "for complex problems."],
     "highlightWord": "solutions",
+    "resumeUrl": "/resume.pdf",
     "bio": [
-      "I build full-stack web applications and work closely with product, QA, and engineering teams. My day usually involves fixing bugs, building new features, and a lot of coffee. I genuinely enjoy what I do, especially that feeling when things finally work.",
+      "I build full-stack web applications and work closely with product, QA, and engineering teams. My day usually involves fixing bugs, building new features, and playing chess at free time.",
       "I like clarity. I like systems. I like when things make sense."
     ]
   },
