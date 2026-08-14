@@ -49,7 +49,7 @@ const HeroSection = ({ data }) => {
   return (
     <section className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-24 bg-background overflow-hidden">
 
-      <div className="relative w-full max-w-6xl mx-auto pr-20 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center">
+      <div className="relative w-full max-w-6xl mx-auto pr-20 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center gap-8 md:gap-12">
         {/* Left column */}
         <div>
           <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/20 text-primary text-xs font-semibold mb-8">
@@ -101,7 +101,7 @@ const HeroSection = ({ data }) => {
 
         {/* Right column: photo */}
         {photoUrl && (
-          <div className="justify-self-center lg:justify-self-end">
+          <div className="justify-self-center lg:justify-self-end hidden lg:block">
             <div className="relative w-64 h-64 md:w-90 md:h-90 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-[0_0_60px_-10px_rgba(251,191,36,0.6)]">
               <img
                 src={photoUrl}

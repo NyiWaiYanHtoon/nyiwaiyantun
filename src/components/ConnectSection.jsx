@@ -47,21 +47,6 @@ const ConnectSection = ({ data, email, stickyTitle }) => {
             </button>
           </div>
         </div>
-
-        <div className="flex gap-6">
-          {socialLinks.map(({ label, href }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm text-muted hover:text-text transition-colors"
-            >
-              {label}
-              <ArrowUpRight size={12} />
-            </a>
-          ))}
-        </div>
       </div>
     </Section>
   );

@@ -263,13 +263,6 @@
     "heading": "Let's build",
     "headingAccent": "something together.",
     "subheading": "Got a project in mind, want to collaborate, or just say hi? My inbox is always open.",
-    "ctaLabel": "Say Hello →",
-    "socialLinks": [
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/"
-      },
-      { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon" }
-    ]
+    "ctaLabel": "Say Hello →"
   }
 }
