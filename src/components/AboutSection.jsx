@@ -11,11 +11,11 @@ const AboutSection = ({ data, stickyTitle }) => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start mx-0 md:mx-20 lg:mx-58">
+      <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 md:gap-12 items-start mx-0 md:mx-20 lg:mx-58">
 
         {/* Left — photo + bio */}
         <div className="flex flex-col gap-6">
-          <div className="w-full aspect-[4/3] rounded-2xl bg-text/5 border border-text/10 overflow-hidden">
+          <div className="w-full aspect-[3/2] rounded-2xl bg-text/5 border border-text/10 overflow-hidden">
             {photo ? (
               <img src={photo} alt="Romand" className="w-full h-full object-cover" />
             ) : (

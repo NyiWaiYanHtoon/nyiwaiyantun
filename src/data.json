@@ -10,16 +10,25 @@
   },
 
   "hero": {
-    "badge": "Available for work",
-    "heading": ["Hi, I'm Romand.", "I build solutions", "for complex problems."],
-    "highlightWord": "solutions",
+    "badge": "Available for new opportunities",
+    "name": "Nyi Wai Yan Tun",
+    "bio": "Software engineer with hands-on experience building web applications, working across frontend and backend development, and integrating APIs and AI-powered solutions. I enjoy turning ideas into practical, reliable software." ,
+    "terminal": {
+      "command": "whoami",
+      "answer": [
+        "Software Engineer",
+        "Problem Solver",
+        "Lifelong Learner",
+        "Chess Enthusiast"
+      ]
+    },
+    "socials": [
+      { "type": "github", "url": "https://github.com/NyiWaiYanHtoon" },
+      { "type": "linkedin", "url": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/" }
+    ],
     "resumeUrl": "/resume.pdf",
-    "bio": [
-      "I build full-stack web applications and work closely with product, QA, and engineering teams. My day usually involves fixing bugs, building new features, and playing chess at free time.",
-      "I like clarity. I like systems. I like when things make sense."
-    ]
+    "photoUrl": "/images/my-photo.png"
   },
-
   "skills": {
     "heading": "Tools I know.",
     "headingAccent": "Problems I solve.",
@@ -43,12 +52,27 @@
       {
         "title": "Databases",
         "description": "I work with both relational and non-relational databases depending on what the project needs. PostgreSQL and MySQL for structured data, MongoDB for flexibility, Redis for caching and queues, and Supabase and Firebase for projects that need a backend fast.",
-        "tags": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Supabase", "Firebase"]
+        "tags": [
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Supabase",
+          "Firebase"
+        ]
       },
       {
         "title": "DevOps & Tools",
         "description": "I'm comfortable with the full deployment side of things, containerizing with Docker, orchestrating with Kubernetes, setting up CI/CD pipelines, and working with message brokers like Kafka and RabbitMQ. I also build mobile apps with Flutter and handle payments with Stripe.",
-        "tags": ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Git", "Flutter", "Stripe API"]
+        "tags": [
+          "Docker",
+          "Kubernetes",
+          "Kafka",
+          "RabbitMQ",
+          "Git",
+          "Flutter",
+          "Stripe API"
+        ]
       }
     ]
   },
@@ -74,9 +98,18 @@
         ],
         "tags": ["Next.js", "Supabase", "Tailwind", "Stripe", "Firebase"],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/senior-pj-team/peer-tutoring" },
-          { "label": "Demo Video", "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI" },
-          { "label": "Live", "href": "https://peertube-digital.vercel.app/login" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/senior-pj-team/peer-tutoring"
+          },
+          {
+            "label": "Demo Video",
+            "href": "https://www.youtube.com/watch?v=eTrGNc-UiCI"
+          },
+          {
+            "label": "Live",
+            "href": "https://peertube-digital.vercel.app/login"
+          }
         ]
       },
       {
@@ -95,7 +128,10 @@
         ],
         "tags": ["Vue.js", "Node.js", "MongoDB", "Kafka", "Prisma"],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon?tab=repositories&q=trideo-learning" },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon?tab=repositories&q=trideo-learning"
+          },
           { "label": "Live", "href": "https://trideo.vercel.app/" }
         ]
       },
@@ -115,7 +151,10 @@
         ],
         "tags": ["Flutter", "Node.js", "MySQL", "JWT"],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon/Asset-borrowing-system-mobile/blob/main/README.md" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon/Asset-borrowing-system-mobile/blob/main/README.md"
+          }
         ]
       },
       {
@@ -132,8 +171,14 @@
         ],
         "tags": ["Python", "ANN", "PCA", "Docker", "Scikit-learn"],
         "links": [
-          { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon/salary-prediction-model.git" },
-          { "label": "Slides", "href": "https://docs.google.com/presentation/d/111fW_aGrVDMYpFLJrIQ0OEgwRPXkohCV5xM88igpShs/edit?usp=sharing" }
+          {
+            "label": "GitHub",
+            "href": "https://github.com/NyiWaiYanHtoon/salary-prediction-model.git"
+          },
+          {
+            "label": "Slides",
+            "href": "https://docs.google.com/presentation/d/111fW_aGrVDMYpFLJrIQ0OEgwRPXkohCV5xM88igpShs/edit?usp=sharing"
+          }
         ]
       }
     ]
@@ -182,24 +227,32 @@
     "heading": "Beyond the",
     "headingAccent": "codes.",
     "bio": [
-      "My full name is Nyi Wai Yan Tun, but you can call me Romand.",
-      "I like the feeling when something clicks into place. I like systems that make sense, code that's easy to read, and teams that communicate well.",
-      "Outside of work, I'm probably tinkering with a side project, playing too much chess, or trying to understand how something works just because I'm curious."
+      "My full name is Nyi Wai Yan Tun, but you can call me Romand. I value a work place where collaboration, and continuous learning are encouraged. Outside of work,  I'm probably tinkering with a side project or playing too much chess."
     ],
     "photo": "/images/about-me.png",
     "facts": [
-      { "label": "Based In",          "value": "Bangkok, Thailand — open to relocation" },
-      { "label": "Languages",         "value": "Burmese (native), Thai (basic), English (fluent)" },
-      { "label": "Education",         "value": "B.E. Computer Engineering, Mae Fah Luang University" },
-      { "label": "Off The Clock",     "value": "Playing chess, tinkering with side projects, watching edutainment videos" },
-      { "label": "Current Interest", "value": "How LLMs are changing the way software gets built" },
-      { "label": "Also Me",           "value": "The harder the problem, the sweeter the moment when I finally solve it" }
+      {
+        "label": "Based In",
+        "value": "Bangkok, Thailand — open to relocation"
+      },
+      {
+        "label": "Languages",
+        "value": "Burmese (native), Thai (basic), English (fluent)"
+      },
+      {
+        "label": "Education",
+        "value": "B.E. Computer Engineering, Mae Fah Luang University"
+      },
+      {
+        "label": "Current Take",
+        "value": "How LLMs are changing the way software gets built"
+      }
     ],
     "colleagueTags": [
       "Easy to work with",
       "Asks good questions",
       "Gets things done",
-      "Passionante",
+      "Passionate",
       "Never gives up",
       "Always learning",
       "Overthinks sometimes"
@@ -212,8 +265,11 @@
     "subheading": "Got a project in mind, want to collaborate, or just say hi? My inbox is always open.",
     "ctaLabel": "Say Hello →",
     "socialLinks": [
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/" },
-      { "label": "GitHub",   "href": "https://github.com/NyiWaiYanHtoon" }
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/"
+      },
+      { "label": "GitHub", "href": "https://github.com/NyiWaiYanHtoon" }
     ]
   }
 }
