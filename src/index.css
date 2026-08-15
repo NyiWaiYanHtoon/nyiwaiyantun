@@ -1,4 +1,13 @@
 @import 'tailwindcss';
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =========================
+   Fonts
+   ========================= */
 
 @font-face {
   font-family: 'SpaceGrotesk';
@@ -11,26 +20,168 @@
   --font-spacegrotesk: 'SpaceGrotesk', sans-serif;
 }
 
-@theme {
-  --color-primary: #1ab8b8;
-  --color-background: #000000;
-  --color-text: #f2f2f2;
-  --color-muted: #828280;
+/* =========================
+   Your Original Theme
+   ========================= */
+
+:root {
+  /* Main colors */
+  --background: #000000;
+  --foreground: #f2f2f2;
+
+  --primary: #1ab8b8;
+  --primary-foreground: #000000;
+
+  --muted: #828280;
+  --muted-foreground: #828280;
+
+  /* Secondary */
+  --secondary: #111111;
+  --secondary-foreground: #f2f2f2;
+
+  /* Cards / surfaces */
+  --card: #0a0a0a;
+  --card-foreground: #f2f2f2;
+
+  --popover: #0a0a0a;
+  --popover-foreground: #f2f2f2;
+
+  /* Accent */
+  --accent: #1ab8b8;
+  --accent-foreground: #000000;
+
+  /* UI */
+  --border: #222222;
+  --input: #222222;
+  --ring: #1ab8b8;
+
+  /* Destructive */
+  --destructive: #ef4444;
+
+  /* Charts */
+  --chart-1: #1ab8b8;
+  --chart-2: #828280;
+  --chart-3: #444444;
+  --chart-4: #666666;
+  --chart-5: #999999;
+
+  /* Radius */
+  --radius: 0.625rem;
+
+  /* Sidebar */
+  --sidebar: #000000;
+  --sidebar-foreground: #f2f2f2;
+  --sidebar-primary: #1ab8b8;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #111111;
+  --sidebar-accent-foreground: #f2f2f2;
+  --sidebar-border: #222222;
+  --sidebar-ring: #1ab8b8;
 }
+
+/* =========================
+   Tailwind v4 Theme Mapping
+   ========================= */
+
+@theme inline {
+  /* Fonts */
+  --font-heading: var(--font-sans);
+  --font-sans: 'Geist Variable', sans-serif;
+
+  /* Core colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Components */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-destructive: var(--destructive);
+
+  /* Borders / inputs */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* =========================
+   Scrollbar
+   ========================= */
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-html, body {
-  background-color: #000000;
-}
-
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+/* =========================
+   Global Styles
+========================= */
+
+html,
+body {
+  background-color: #000000;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply font-sans;
+  }
 }

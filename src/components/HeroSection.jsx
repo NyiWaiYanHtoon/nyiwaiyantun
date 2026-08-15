@@ -1,5 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import { Download } from "lucide-react";
 import TerminalCard from "./TerminalCard";
+import { Badge } from "@/components/ui/Badge";
 
 const LinkedInIcon = (props) => (
   <svg
@@ -47,30 +48,33 @@ const HeroSection = ({ data }) => {
   } = data;
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 md:px-16 lg:px-24 py-24 bg-background overflow-hidden">
-
-      <div className="relative w-full max-w-6xl mx-auto pr-20 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center gap-8 md:gap-12">
+    <section className="relative min-h-screen flex items-center px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-20 sm:py-24 bg-background overflow-hidden">
+      <div className="relative w-full max-w-6xl mx-auto grid grid-cols-1 items-center gap-8 md:gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-12">
         {/* Left column */}
-        <div>
-          <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/20 text-primary text-xs font-semibold mb-8">
+        <div className="w-full max-w-2xl">
+          <Badge className="inline-flex items-center gap-2 px-2.5 py-1.5 sm:px-3.5 rounded-full border-primary/30 bg-primary/5 text-primary text-[10px] sm:text-xs font-medium tracking-wide hover:bg-primary/10 transition-colors mb-3 sm:mb-4">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            </span>
             {badge}
-          </span>
+          </Badge>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white uppercase mb-8 leading-none">
+          <h1 className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-extrabold tracking-tight text-white uppercase mb-5 sm:mb-6 md:mb-8 leading-[0.95]">
             {name}
           </h1>
 
-          <div className="space-y-4 max-w-lg mb-10">
-              <p className="text-base text-muted leading-relaxed">
-                {bio}
-              </p>
+          <div className="max-w-xl mb-6 sm:mb-8 md:mb-10">
+            <p className="text-sm sm:text-base md:text-lg text-muted leading-relaxed">
+              {bio}
+            </p>
           </div>
 
           {/* Terminal card */}
           <TerminalCard command={terminal.command} answer={terminal.answer} />
 
           {/* Socials + Resume */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             {socials.map(({ type, url }) => {
               const Icon = socialIcons[type];
               return (
@@ -79,7 +83,7 @@ const HeroSection = ({ data }) => {
                   href={url}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-11 h-11 flex items-center justify-center rounded-full border border-white/15 text-white/80 hover:border-primary hover:text-primary transition-colors"
+                  className="w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center rounded-full border border-white/15 text-white/80 hover:border-primary hover:text-primary transition-colors"
                 >
                   {Icon && <Icon size={18} />}
                 </a>
@@ -90,10 +94,10 @@ const HeroSection = ({ data }) => {
               <a
                 href={resumeUrl}
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-black font-semibold text-sm hover:brightness-110 transition"
+                className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full bg-primary text-black font-semibold text-xs sm:text-sm hover:brightness-110 transition"
               >
                 Download Resume
-                <ArrowRight size={16} />
+                <Download size={16} />
               </a>
             )}
           </div>
@@ -101,8 +105,8 @@ const HeroSection = ({ data }) => {
 
         {/* Right column: photo */}
         {photoUrl && (
-          <div className="justify-self-center lg:justify-self-end hidden lg:block">
-            <div className="relative w-64 h-64 md:w-90 md:h-90 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-[0_0_60px_-10px_rgba(251,191,36,0.6)]">
+          <div className="hidden justify-self-center lg:flex lg:justify-self-end">
+            <div className="relative w-64 h-64 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-[0_0_60px_-10px_rgba(251,191,36,0.6)]">
               <img
                 src={photoUrl}
                 alt={name}

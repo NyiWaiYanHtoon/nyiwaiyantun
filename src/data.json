@@ -10,9 +10,9 @@
   },
 
   "hero": {
-    "badge": "Available for new opportunities",
+    "badge": "Open to Work",
     "name": "Nyi Wai Yan Tun",
-    "bio": "Software engineer with hands-on experience building web applications, working across frontend and backend development, and integrating APIs and AI-powered solutions. I enjoy turning ideas into practical, reliable software." ,
+    "bio": "Software engineer with hands-on experience building web applications, working across frontend and backend development, and integrating APIs and AI-powered solutions. I enjoy turning ideas into practical, reliable software.",
     "terminal": {
       "command": "whoami",
       "answer": [
@@ -24,7 +24,10 @@
     },
     "socials": [
       { "type": "github", "url": "https://github.com/NyiWaiYanHtoon" },
-      { "type": "linkedin", "url": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/" }
+      {
+        "type": "linkedin",
+        "url": "https://www.linkedin.com/in/nyi-wai-yan-tun-704781200/"
+      }
     ],
     "resumeUrl": "/resume.pdf",
     "photoUrl": "/images/my-photo.png"
@@ -33,25 +36,21 @@
     "heading": "Tools I know.",
     "headingAccent": "Problems I solve.",
     "subheading": "I work across the full stack, from designing interfaces to building APIs to deploying on the cloud. Here's what I reach for depending on the job.",
-    "items": [
+    "categories": [
       {
-        "title": "Programming Languages",
-        "description": "These are the languages I am most confident with. JavaScript and TypeScript for the web, Python for data and scripting, Java and C# for enterprise systems, and Dart for mobile. I'm comfortable switching between them.",
-        "tags": ["Javascript", "Typescript", "Python", "Java", "C#", "Dart"]
+        "label": "Programming Languages",
+        "tags": ["JavaScript", "TypeScript", "Python", "Java", "C#", "Dart"]
       },
       {
-        "title": "Frontend Development",
-        "description": "I build interfaces that are fast, clean, and easy to use. I work mostly with Vue.js and React depending on the project. I care about details, spacing, transitions, responsiveness, which are the things users notice without knowing why.",
+        "label": "Frontend Development",
         "tags": ["Vue.js", "React", "Next.js", "Tailwind CSS", "Bootstrap"]
       },
       {
-        "title": "Backend Development",
-        "description": "I design and build APIs and services that are reliable, maintainable, and easy to scale. I've worked with Node.js and Nest.js for JavaScript backends, Django and FastAPI for Python, and Spring Boot for Java. I like systems that are predictable and well-structured.",
+        "label": "Backend Development",
         "tags": ["Node.js", "Nest.js", "Django", "FastAPI", "Spring Boot"]
       },
       {
-        "title": "Databases",
-        "description": "I work with both relational and non-relational databases depending on what the project needs. PostgreSQL and MySQL for structured data, MongoDB for flexibility, Redis for caching and queues, and Supabase and Firebase for projects that need a backend fast.",
+        "label": "Databases",
         "tags": [
           "PostgreSQL",
           "MySQL",
@@ -62,8 +61,7 @@
         ]
       },
       {
-        "title": "DevOps & Tools",
-        "description": "I'm comfortable with the full deployment side of things, containerizing with Docker, orchestrating with Kubernetes, setting up CI/CD pipelines, and working with message brokers like Kafka and RabbitMQ. I also build mobile apps with Flutter and handle payments with Stripe.",
+        "label": "DevOps & Tools",
         "tags": [
           "Docker",
           "Kubernetes",
@@ -76,7 +74,6 @@
       }
     ]
   },
-
   "work": {
     "heading": "Things I have",
     "headingAccent": "actually built.",
