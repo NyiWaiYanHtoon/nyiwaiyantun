@@ -195,7 +195,7 @@
         "location": "BKK, TH",
         "dateRange": "Jan 2026 - Present",
         "company": "Manatal",
-        "description": "Led development of scalable web applications using React, Node.js, and PostgreSQL. Architected microservices infrastructure serving 100K+ users. Mentored junior developers and established coding standards."
+        "description": "Delivered production features, bug fixes, and customer-requested hotfixes while contributing across backend, frontend, testing, and deployment."
       },
       {
         "id": "mfu-teaching-assistant",
@@ -206,7 +206,7 @@
         "location": "CR, TH",
         "dateRange": "Aug 2024 - Dec 2025",
         "company": "Mae Fah Luang University",
-        "description": "Developed full-stack applications using JavaScript, Python, and MySQL. Participated in agile development process and code reviews. Contributed to open-source projects and internal tooling."
+        "description": "Assisted students with mobile and web development labs, providing hands-on guidance and strengthening their problem-solving and technical skills."
       },
       {
         "id": "yoma-tech-support",
@@ -217,7 +217,7 @@
         "location": "YGN, MM",
         "dateRange": "May 2021 - Jul 2021",
         "company": "YOMA Bank",
-        "description": "Created responsive websites using HTML, CSS, and JavaScript. Worked with WordPress and PHP for content management. Assisted in debugging and testing web applications."
+        "description": "Provided technical support for software, hardware, and network issues while handling system setup, maintenance, and on-site and remote troubleshooting."
       }
     ]
   },
