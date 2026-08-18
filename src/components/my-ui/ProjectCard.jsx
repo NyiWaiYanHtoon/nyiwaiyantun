@@ -27,7 +27,7 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
     <div className="relative">
       <Card className="overflow-hidden bg-background/60 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 p-0">
         <CardContent className="p-0">
-          <div className="flex flex-col sm:flex-row sm:items-center">
+          <div className="flex flex-col md:flex-row sm:items-center">
               <div
                 className="group/image relative w-full sm:w-1/4 md:w-1/3 aspect-[1/1] overflow-hidden border-b cursor-none"
               onMouseMove={handlePointerMove}
