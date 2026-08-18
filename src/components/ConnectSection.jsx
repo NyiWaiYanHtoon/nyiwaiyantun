@@ -3,7 +3,7 @@ import { Check, Copy } from "lucide-react";
 import Section from "@/components/my-ui/Section";
 
 const ConnectSection = ({ data, email, stickyTitle }) => {
-  const { heading, headingAccent, subheading, ctaLabel, socialLinks } = data;
+  const { heading, headingAccent, subheading, ctaLabel } = data;
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {

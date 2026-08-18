@@ -1,7 +1,7 @@
 import Section from "@/components/my-ui/Section";
 import ExperienceTab from "@/components/my-ui/ExperienceTab";
 import EducationTab from "@/components/my-ui/EducationTab";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 
 const JourneySection = ({ data, stickyTitle }) => {
   const { heading, headingAccent, subheading, experiences } = data;
