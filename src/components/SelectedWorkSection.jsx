@@ -18,7 +18,7 @@ const SelectedWorkSection = ({ data, stickyTitle }) => {
       </div>
 
       {/* Projects list */}
-      <div className="relative mx-8 md:mx-58 flex flex-col gap-10">
+      <div className="relative mx-8 lg:mx-58 flex flex-col gap-10">
 
         {projects.map(({ id, name, subtitle, period, description, bullets, tags, links, color, image }) => (
           <ProjectCard

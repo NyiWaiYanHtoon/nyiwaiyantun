@@ -46,7 +46,7 @@ const TerminalCard = ({ command, answer }) => {
   }, [currentPhrase, displayText, isDeleting]);
 
   return (
-    <div className="w-full max-w-lg rounded-lg border border-white/10 bg-white/[0.03] overflow-hidden mb-10">
+    <div className="w-full max-w-full md:max-w-lg rounded-lg border border-white/10 bg-white/[0.03] overflow-hidden mb-10">
       <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-b border-white/10">
         <div className="flex gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />

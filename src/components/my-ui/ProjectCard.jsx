@@ -28,8 +28,8 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
       <Card className="overflow-hidden bg-background/60 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 p-0">
         <CardContent className="p-0">
           <div className="flex flex-col sm:flex-row sm:items-center">
-            <div
-              className="group/image relative w-full sm:w-1/4 aspect-[1/1] overflow-hidden border-b cursor-none"
+              <div
+                className="group/image relative w-full sm:w-1/4 md:w-1/3 aspect-[1/1] overflow-hidden border-b cursor-none"
               onMouseMove={handlePointerMove}
               // this makes the circle visible when hovering  
               onMouseEnter={() => setCursor((prev) => ({ ...prev, visible: true }))}
@@ -64,8 +64,8 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
                   style={{
                     left: `${cursor.x}px`,
                     top: `${cursor.y}px`,
-                    width: "92px",
-                    height: "92px",
+                    width: 'min(18vw,92px)',
+                    height: 'min(18vw,92px)',
                     opacity: cursor.visible ? 1 : 0,
                   }}
                 >

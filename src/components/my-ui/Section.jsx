@@ -6,7 +6,7 @@ const Section = ({ id, title, children }) => {
     >
       {/* Sticky title */}
       {title && (
-        <div className="sticky top-17 z-10 mb-12">
+        <div className="sticky top-4 md:top-17 z-10 mb-12">
           <div className="flex items-center gap-4">
             <div className="w-8 h-px bg-primary" />
             <span className="text-small text-primary tracking-tight uppercase font-mono">

@@ -27,7 +27,7 @@ const ConnectSection = ({ data, email, stickyTitle }) => {
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${email}`}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
             target="_blank"
             rel="noopener noreferrer"
           >
