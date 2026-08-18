@@ -86,7 +86,7 @@
     ]
   },
   "work": {
-    "heading": "Things I have",
+    "heading": "Things I've",
     "headingAccent": "actually built.",
     "subheading": "A few projects I'm proud of, from university work to personal builds. Each one taught me something new.",
     "projects": [
@@ -181,42 +181,43 @@
       }
     ]
   },
-
   "experience": {
-    "heading": "Building things.",
-    "headingAccent": "Shipping things.",
-    "headingSuffix": "Learning things.",
-    "subheading": "I've worked across universities, banks, and startups — writing code, supporting teams, and figuring out how real software gets built and shipped.",
-    "items": [
+    "heading": "My Career &",
+    "headingAccent": "Education Journey",
+    "subheading": "A summary of the roles I've held, the responsibilities I've taken on, and the work I've contributed to along the way.",
+    "experiences": [
       {
-        "period": "Jan 2026 - Present",
-        "position": "Software Engineer Intern",
-        "org": "Manatal",
-        "description": "Worked in an Agile team handling tickets via Jira across the full dev lifecycle. Delivered features, bug fixes, and customer-driven hotfixes to production. Built LLM-powered pipelines and microservice workflows for scalable data processing.",
-        "bgColor": "#d4e8ff",
-        "borderColor": "#828280",
-        "textColor": "#0c0c0c",
-        "logo": "/images/manatal-logo.png"
+        "id": "manatal-se-intern",
+        "logo": "/images/manatal-logo.png",
+        "title": "Full Stack Software Engineer (Contract)",
+        "employmentType": "Internship",
+        "workMode": "Onsite",
+        "location": "BKK, TH",
+        "dateRange": "Jan 2026 - Present",
+        "company": "Manatal",
+        "description": "Led development of scalable web applications using React, Node.js, and PostgreSQL. Architected microservices infrastructure serving 100K+ users. Mentored junior developers and established coding standards."
       },
       {
-        "period": "Aug 2024 - Dec 2025",
-        "position": "Programming Teaching Assistant",
-        "org": "Mae Fah Luang University",
-        "description": "Supported students in Mobile and Web development labs, offering hands-on guidance and strengthening problem-solving and communication skills through diverse one-on-one interactions.",
-        "bgColor": "#8b1d1d",
-        "borderColor": "#828280",
-        "textColor": "#f0f7fd",
-        "logo": "/images/mfu-logo.png"
+        "id": "mfu-teaching-assistant",
+        "logo": "/images/mfu-logo.png",
+        "title": "Programming Teaching Assistant",
+        "employmentType": "Part-time",
+        "workMode": "Onsite",
+        "location": "CR, TH",
+        "dateRange": "Aug 2024 - Dec 2025",
+        "company": "Mae Fah Luang University",
+        "description": "Developed full-stack applications using JavaScript, Python, and MySQL. Participated in agile development process and code reviews. Contributed to open-source projects and internal tooling."
       },
       {
-        "period": "May 2021 - Jul 2022",
-        "position": "End-user IT Support",
-        "org": "YOMA Bank",
-        "description": "Delivered end-user support for software, hardware, and network issues including system setup, installation, and maintenance. Collaborated with developers and IT teams to troubleshoot problems remotely and on-site.",
-        "bgColor": "#f0f7fd",
-        "borderColor": "#828280",
-        "textColor": "#0c0c0c",
-        "logo": "/images/yoma-logo.png"
+        "id": "yoma-tech-support",
+        "logo": "/images/yoma-logo.png",
+        "title": "End User Support",
+        "employmentType": "Full-Time",
+        "workMode": "Onsite",
+        "location": "YGN, MM",
+        "dateRange": "May 2021 - Jul 2021",
+        "company": "YOMA Bank",
+        "description": "Created responsive websites using HTML, CSS, and JavaScript. Worked with WordPress and PHP for content management. Assisted in debugging and testing web applications."
       }
     ]
   },

@@ -1,23 +1,80 @@
+import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links, color, image }) => {
+  const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
+  const primaryLink = links?.[links.length - 1]; // Get the last link as the primary link
+  
+  // this makes the round object follow the cursor movement
+  const handlePointerMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    setCursor({
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+      visible: true,
+    });
+  };
+
+  const handleClick = () => {
+    if (primaryLink?.href) {
+      window.open(primaryLink.href, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <div className="relative">
-      <Card className="group overflow-hidden bg-background/60 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 p-0">
+      <Card className="overflow-hidden bg-background/60 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 p-0">
         <CardContent className="p-0">
           <div className="flex flex-col sm:flex-row sm:items-center">
-            <div className={`w-full sm:w-1/4 aspect-[1/1] ${color} border-b overflow-hidden`}>
-              {image ? (
-                <img
-                  src={image}
-                  alt={name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center text-muted text-xs px-3 text-center">
-                  {name}
+            <div
+              className="group/image relative w-full sm:w-1/4 aspect-[1/1] overflow-hidden border-b cursor-none"
+              onMouseMove={handlePointerMove}
+              // this makes the circle visible when hovering  
+              onMouseEnter={() => setCursor((prev) => ({ ...prev, visible: true }))}
+              onMouseLeave={() => setCursor((prev) => ({ ...prev, visible: false }))}
+              onClick={handleClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  handleClick();
+                }
+              }}
+            >
+              <div className={`${color} h-full w-full`}>
+                {image ? (
+                  <img
+                    src={image}
+                    alt={name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover/image:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-muted text-xs px-3 text-center">
+                    {name}
+                  </div>
+                )}
+              </div>
+
+              {primaryLink && (
+                <div
+                  className="pointer-events-none absolute left-0 top-0 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-primary/60 bg-background/80 text-primary shadow-lg transition-opacity duration-200"
+                  style={{
+                    left: `${cursor.x}px`,
+                    top: `${cursor.y}px`,
+                    width: "92px",
+                    height: "92px",
+                    opacity: cursor.visible ? 1 : 0,
+                  }}
+                >
+                  <div className="flex flex-col items-center justify-center text-center leading-none">
+                    <span className="text-[7px] font-medium uppercase tracking-[0.25em]">{primaryLink.label == "Live" ? "Go" : "Open"}</span>
+                    <span className="mt-1 text-[9px] uppercase tracking-[0.12em] break-words px-2">
+                      {primaryLink.label == "GitHub" ? "README" : primaryLink.label}
+                    </span>
+                  </div>
                 </div>
               )}
             </div>

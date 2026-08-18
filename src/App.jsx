@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import Navbar from "./components/my-ui/Navbar";
-import HeroSection from "./components/HeroSection";
-import SkillsSection from "./components/SkillsSection";
-import SelectedWorkSection from "./components/SelectedWorkSection";
-import ExperienceSection from "./components/ExperienceSection";
-import AboutSection from "./components/AboutSection";
-import ConnectSection from "./components/ConnectSection";
-import data from "./data.json";
+import Navbar from "@/components/my-ui/Navbar";
+import HeroSection from "@/components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
+import SelectedWorkSection from "@/components/SelectedWorkSection";
+import JourneySection from "@/components/JourneySection";
+import AboutSection from "@/components/AboutSection";
+import ConnectSection from "@/components/ConnectSection";
+import data from "@/data.json";
 
 const NAV_LINKS = [
   { label: "What I Do", href: "what-i-do" },
@@ -65,7 +65,7 @@ export default function App() {
       <HeroSection data={data.hero} />
       <SkillsSection data={data.skills} stickyTitle={NAV_LINKS[0].label} />
       <SelectedWorkSection data={data.work} stickyTitle={NAV_LINKS[1].label} />
-      <ExperienceSection data={data.experience} stickyTitle={NAV_LINKS[2].label} />
+      <JourneySection data={data.experience} stickyTitle={NAV_LINKS[2].label} />
       <AboutSection data={data.about} stickyTitle={NAV_LINKS[3].label} />
       <ConnectSection data={data.connect} email={data.meta.email} stickyTitle={NAV_LINKS[4].label} />
 
