@@ -1,5 +1,5 @@
 import { Download } from "lucide-react";
-import TerminalCard from "./TerminalCard";
+import TerminalCard from "@/components/my-ui/TerminalCard";
 import { Badge } from "@/components/ui/Badge";
 
 const LinkedInIcon = (props) => (

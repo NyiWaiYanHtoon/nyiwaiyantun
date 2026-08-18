@@ -38,19 +38,26 @@
     "subheading": "I work across the full stack, from designing interfaces to building APIs to deploying on the cloud. Here's what I reach for depending on the job.",
     "categories": [
       {
-        "label": "Programming Languages",
-        "tags": ["JavaScript", "TypeScript", "Python", "Java", "C#", "Dart"]
-      },
-      {
         "label": "Frontend Development",
-        "tags": ["Vue.js", "React", "Next.js", "Tailwind CSS", "Bootstrap"]
+        "tags": [
+          "Vue.js",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Bootstrap",
+          "Flutter"
+        ]
       },
       {
         "label": "Backend Development",
         "tags": ["Node.js", "Nest.js", "Django", "FastAPI", "Spring Boot"]
       },
       {
-        "label": "Databases",
+        "label": "Programming Languages",
+        "tags": ["JavaScript", "TypeScript", "Python", "Java", "Dart"]
+      },
+      {
+        "label": "Databases & Cloud Services",
         "tags": [
           "PostgreSQL",
           "MySQL",
@@ -61,16 +68,20 @@
         ]
       },
       {
-        "label": "DevOps & Tools",
+        "label": "DevOps, Infrastructure & Tools",
         "tags": [
           "Docker",
           "Kubernetes",
+          "AWS",
+          "Git",
           "Kafka",
           "RabbitMQ",
-          "Git",
-          "Flutter",
-          "Stripe API"
+          "Postman"
         ]
+      },
+      {
+        "label": "AI & LLM",
+        "tags": ["LLMs", "AWS Bedrock", "Llama", "MCP"]
       }
     ]
   },
@@ -83,15 +94,12 @@
         "id": "peertube",
         "name": "Peertube",
         "subtitle": "Peer Tutoring System",
-        "org": "Senior Project · University",
-        "period": "2024 - 2025",
+        "period": "2025",
         "image": "/images/peertube-cover.png",
         "color": "bg-primary/10",
-        "description": "A scalable peer tutoring platform with session management, financial dashboards, refund and report features, and payment integration.",
+        "description": "A scalable peer tutoring platform with session management, financial dashboards, refund/report features, and payment integration.",
         "bullets": [
-          "Developed tutor, student, and admin workflows with session management, financial dashboards, refund and report features, and Stripe PromptPay integration.",
-          "Integrated full-text search with indexing, notifications (Firebase), email (Resend), Google OAuth, real-time chat, and automated tasks with cron jobs.",
-          "Optimized performance with Supabase queues, server-side prefetching, and SSR for SEO."
+          "Integrated full-text search, payment flow, Firebase notifications, Resend email, Google OAuth, real-time chat, and automated tasks, while optimizing performance with Supabase queues, server-side prefetching, and SSR for SEO."
         ],
         "tags": ["Next.js", "Supabase", "Tailwind", "Stripe", "Firebase"],
         "links": [
@@ -113,15 +121,12 @@
         "id": "trideo",
         "name": "Trideo",
         "subtitle": "Learning Analytic System",
-        "org": "Personal Project",
         "period": "2024",
         "image": "/images/trideo-cover.png",
         "color": "bg-text/5",
         "description": "A full-stack video learning platform with admin dashboards to track user activities — visits, views, and completions.",
         "bullets": [
-          "Built full-stack video learning platform with admin dashboards to track user activities (visits, views, completions).",
-          "Implemented Google OAuth (Passport.js), video uploads via Cloudinary and Multer, and event streaming with managed Kafka (Confluent Cloud). Used Prisma ORM with MongoDB Atlas.",
-          "Deployed frontend on Vercel, backend on Render, Kafka worker on Fly.io."
+          "Implemented Google OAuth with Passport.js, video uploads with Cloudinary and Multer, event streaming with Kafka (Confluent Cloud), and background processing with a dedicated Kafka worker."
         ],
         "tags": ["Vue.js", "Node.js", "MongoDB", "Kafka", "Prisma"],
         "links": [
@@ -134,17 +139,14 @@
       },
       {
         "id": "asset",
-        "name": "Asset Borrowing",
+        "name": "Asset Borrowing System",
         "subtitle": "Mobile App",
-        "org": "Personal Project",
         "period": "2023",
         "image": "/images/asset-borrowing-cover.png",
         "color": "bg-primary/5",
-        "description": "A mobile app for borrowing and returning assets, with role-based workflows for users, lecturers, and staff.",
+        "description": "A mobile asset management app for booking, borrowing, and returning assets with role-based workflows for users, lecturers, and staff.",
         "bullets": [
-          "Users can book, borrow, return assets, with lecturer roles managing approvals and staff managing takeout and returns.",
-          "Implemented secure JWT-based authentication, email OTP verification, and automated asset status updates with node-schedule.",
-          "Used Cloudinary and Multer for image uploads."
+          "Implemented JWT authentication, email OTP verification, automated asset status updates with node-schedule, and image uploads using Cloudinary and Multer."
         ],
         "tags": ["Flutter", "Node.js", "MySQL", "JWT"],
         "links": [
@@ -158,13 +160,12 @@
         "id": "salary",
         "name": "Salary Prediction",
         "subtitle": "ML Model",
-        "org": "Academic Project",
         "period": "2023",
         "image": "/images/salary-prediction-cover.png",
         "color": "bg-text/5",
-        "description": "A machine learning model that predicts salaries using an Artificial Neural Network, enhanced with ensemble and dimensionality reduction techniques.",
+        "description": "A machine learning model that predicts whether an individual falls into a high-salary category based on their demographic, educational, and employment information.",
         "bullets": [
-          "Developed a salary prediction model using ANN, enhanced with bagging and PCA for improved performance and robustness."
+          "Developed and evaluated ANN-based classification models with regularization, bagging, feature selection, and PCA, while preprocessing missing, categorical, duplicate, and irrelevant features."
         ],
         "tags": ["Python", "ANN", "PCA", "Docker", "Scikit-learn"],
         "links": [

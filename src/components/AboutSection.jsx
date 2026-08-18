@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "@/components/my-ui/Section";
 
 const AboutSection = ({ data, stickyTitle }) => {
   const { heading, headingAccent, bio, photo, facts, colleagueTags } = data;

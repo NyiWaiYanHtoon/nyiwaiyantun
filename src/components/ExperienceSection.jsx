@@ -1,5 +1,5 @@
-import Section from "./Section";
-import ExperienceCard from "./ExperienceCard";
+import Section from "@/components/my-ui/Section";
+import ExperienceCard from "@/components/my-ui/ExperienceCard";
 
 const ExperienceSection = ({ data , stickyTitle}) => {
   const { heading, headingAccent, headingSuffix, subheading, items } = data;

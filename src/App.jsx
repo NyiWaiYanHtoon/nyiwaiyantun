@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/my-ui/Navbar";
 import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
 import SelectedWorkSection from "./components/SelectedWorkSection";
