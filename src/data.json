@@ -12,7 +12,7 @@
   "hero": {
     "badge": "Open to Work",
     "name": "Nyi Wai Yan Tun",
-    "bio": "Software engineer with hands-on experience building web applications, working across frontend and backend development, and integrating APIs and AI-powered solutions. I enjoy turning ideas into practical, reliable software.",
+    "bio": "Software engineer with hands-on experience building web applications, working across frontend and backend development, and integrating APIs and AI-powered solutions.",
     "terminal": {
       "command": "whoami",
       "answer": [

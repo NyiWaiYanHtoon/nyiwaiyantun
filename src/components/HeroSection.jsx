@@ -61,7 +61,7 @@ const HeroSection = ({ data }) => {
             {badge}
           </Badge>
 
-          <h1 className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-[4.25rem] font-extrabold tracking-tight text-white uppercase mb-5 sm:mb-6 md:mb-8 leading-[0.95]">
+          <h1 className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-[3.25rem] font-extrabold tracking-tight text-white uppercase mb-5 sm:mb-6 md:mb-8 leading-[0.95]">
             {name}
           </h1>
 
