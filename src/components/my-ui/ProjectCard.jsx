@@ -3,10 +3,20 @@ import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links, color, image }) => {
+const ProjectCard = ({
+  name,
+  subtitle,
+  period,
+  description,
+  bullets,
+  tags,
+  links,
+  color,
+  image,
+}) => {
   const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
   const primaryLink = links?.[links.length - 1]; // Get the last link as the primary link
-  
+
   // this makes the round object follow the cursor movement
   const handlePointerMove = (event) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -27,13 +37,17 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
     <div className="relative">
       <Card className="overflow-hidden bg-background/60 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 p-0">
         <CardContent className="p-0">
-          <div className="flex flex-col md:flex-row sm:items-center">
-              <div
-                className="group/image relative w-full sm:w-1/4 md:w-1/3 aspect-[1/1] overflow-hidden border-b cursor-none"
+          <div className="flex flex-col lg:flex-row items-center">
+            <div
+              className="group/image relative w-full lg:w-1/4 aspect-[1/1] overflow-hidden border-b cursor-none self-stretch"
               onMouseMove={handlePointerMove}
-              // this makes the circle visible when hovering  
-              onMouseEnter={() => setCursor((prev) => ({ ...prev, visible: true }))}
-              onMouseLeave={() => setCursor((prev) => ({ ...prev, visible: false }))}
+              // this makes the circle visible when hovering
+              onMouseEnter={() =>
+                setCursor((prev) => ({ ...prev, visible: true }))
+              }
+              onMouseLeave={() =>
+                setCursor((prev) => ({ ...prev, visible: false }))
+              }
               onClick={handleClick}
               role="button"
               tabIndex={0}
@@ -64,15 +78,19 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
                   style={{
                     left: `${cursor.x}px`,
                     top: `${cursor.y}px`,
-                    width: 'min(18vw,92px)',
-                    height: 'min(18vw,92px)',
+                    width: "min(18vw,92px)",
+                    height: "min(18vw,92px)",
                     opacity: cursor.visible ? 1 : 0,
                   }}
                 >
                   <div className="flex flex-col items-center justify-center text-center leading-none">
-                    <span className="text-[7px] font-medium uppercase tracking-[0.25em]">{primaryLink.label == "Live" ? "Go" : "Open"}</span>
+                    <span className="text-[7px] font-medium uppercase tracking-[0.25em]">
+                      {primaryLink.label == "Live" ? "Go" : "Open"}
+                    </span>
                     <span className="mt-1 text-[9px] uppercase tracking-[0.12em] break-words px-2">
-                      {primaryLink.label == "GitHub" ? "README" : primaryLink.label}
+                      {primaryLink.label == "GitHub"
+                        ? "README"
+                        : primaryLink.label}
                     </span>
                   </div>
                 </div>
@@ -85,14 +103,21 @@ const ProjectCard = ({ name, subtitle, period, description, bullets, tags, links
               </Badge>
 
               <h3 className="text-2xl md:text-3xl font-bold leading-tight">
-                {name}<span className="text-primary"> · </span>{subtitle}
+                {name}
+                <span className="text-primary"> · </span>
+                {subtitle}
               </h3>
 
-              <p className="text-muted text-sm leading-relaxed">{description}</p>
+              <p className="text-muted text-sm leading-relaxed">
+                {description}
+              </p>
 
               <ul className="flex flex-col gap-2">
                 {(bullets ?? []).map((b, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-muted leading-relaxed">
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 text-sm text-muted leading-relaxed"
+                  >
                     <span className="text-primary mt-1 shrink-0">·</span>
                     <span>{b}</span>
                   </li>

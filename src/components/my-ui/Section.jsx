@@ -1,9 +1,6 @@
 const Section = ({ id, title, children }) => {
   return (
-    <section
-      id={id}
-      className="px-8 md:px-10 py-24 relative"
-    >
+    <section id={id} className="px-8 md:px-10 py-24 relative">
       {/* Sticky title */}
       {title && (
         <div className="sticky top-4 md:top-17 z-10 mb-12">

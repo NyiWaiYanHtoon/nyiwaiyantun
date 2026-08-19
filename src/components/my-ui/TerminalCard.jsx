@@ -14,21 +14,24 @@ const TerminalCard = ({ command, answer }) => {
       return;
     }
 
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        const nextText = currentPhrase.slice(0, displayText.length + 1);
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          const nextText = currentPhrase.slice(0, displayText.length + 1);
+          setDisplayText(nextText);
+          return;
+        }
+
+        const nextText = currentPhrase.slice(0, displayText.length - 1);
         setDisplayText(nextText);
-        return;
-      }
 
-      const nextText = currentPhrase.slice(0, displayText.length - 1);
-      setDisplayText(nextText);
-
-      if (nextText === "") {
-        setIsDeleting(false);
-        setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-      }
-    }, isDeleting ? 45 : 90);
+        if (nextText === "") {
+          setIsDeleting(false);
+          setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        }
+      },
+      isDeleting ? 45 : 90,
+    );
 
     return () => clearTimeout(timeout);
   }, [currentPhrase, displayText, isDeleting, phrases.length]);
@@ -59,8 +62,7 @@ const TerminalCard = ({ command, answer }) => {
       </div>
       <div className="px-5 py-5 font-mono">
         <p className="text-sm text-muted text-white/40">
-          <span>~</span>{" "}
-          <span className='text-amber-400'>{command}</span>
+          <span>~</span> <span className="text-amber-400">{command}</span>
         </p>
         <p className="text-2xl md:text-3xl font-bold text-primary mt-1 min-h-[2.25rem] md:min-h-[2.75rem]">
           {displayText}

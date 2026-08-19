@@ -14,36 +14,35 @@ const ConnectSection = ({ data, email, stickyTitle }) => {
 
   return (
     <Section id="connect" title={stickyTitle}>
-      <div className="mb-12 mx-8 md:mx-58">
+      <div className="mb-12 mx-8 md:mx-20 lg:mx-58">
         <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
           {heading}
           <br />
           <span className="text-primary">{headingAccent}</span>
         </h2>
         <p className="text-muted max-w-lg leading-relaxed">{subheading}</p>
-      </div>
-
-      <div className="flex flex-col items-start gap-6 mx-8 md:mx-58">
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-          <a
-            href={`https://mail.google.com/mail/?view=cm&to=${email}`}
-            className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {ctaLabel}
-          </a>
-
-          {/* Email display + copy */}
-          <div className="inline-flex items-center gap-2 text-xs text-muted">
-            <span>{email}</span>
-            <button
-              onClick={handleCopy}
-              className="text-muted hover:text-text transition-colors"
-              aria-label="Copy email"
+        <div className="flex flex-col items-start gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-3">
+            <a
+              href={`https://mail.google.com/mail/?view=cm&to=${email}`}
+              className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-primary text-background font-semibold text-sm hover:opacity-90 transition-opacity"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {copied ? <Check size={14} /> : <Copy size={14} />}
-            </button>
+              {ctaLabel}
+            </a>
+
+            {/* Email display + copy */}
+            <div className="inline-flex items-center gap-2 text-xs text-muted">
+              <span>{email}</span>
+              <button
+                onClick={handleCopy}
+                className="text-muted hover:text-text transition-colors"
+                aria-label="Copy email"
+              >
+                {copied ? <Check size={14} /> : <Copy size={14} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>

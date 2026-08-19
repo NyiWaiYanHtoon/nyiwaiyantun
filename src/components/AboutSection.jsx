@@ -5,19 +5,22 @@ const AboutSection = ({ data, stickyTitle }) => {
 
   return (
     <Section id="meet-you" title={stickyTitle}>
-      <div className="mb-12 mx-0 md:mx-20 lg:mx-58">
+      <div className="mb-12 mx-8 md:mx-20 lg:mx-58">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           {heading} <span className="text-primary">{headingAccent}</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 md:gap-12 items-start mx-0 md:mx-20 lg:mx-58">
-
+      <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 md:gap-12 items-start mx-8 md:mx-20 lg:mx-58">
         {/* Left — photo + bio */}
         <div className="flex flex-col gap-6">
           <div className="w-full aspect-[3/2] rounded-2xl bg-text/5 border border-text/10 overflow-hidden">
             {photo ? (
-              <img src={photo} alt="Romand" className="w-full h-full object-cover" />
+              <img
+                src={photo}
+                alt="Romand"
+                className="w-full h-full object-cover"
+              />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-muted text-sm">
                 Your photo here
@@ -25,14 +28,22 @@ const AboutSection = ({ data, stickyTitle }) => {
             )}
           </div>
           {bio.map((paragraph, i) => (
-            <p key={i} className="text-muted leading-relaxed text-sm md:text-base">{paragraph}</p>
+            <p
+              key={i}
+              className="text-muted leading-relaxed text-sm md:text-base"
+            >
+              {paragraph}
+            </p>
           ))}
         </div>
 
         {/* Right — facts table */}
         <div className="flex flex-col divide-y divide-text/10">
           {facts.map(({ label, value }) => (
-            <div key={label} className="py-4 flex flex-col sm:grid sm:grid-cols-[140px_1fr] gap-1 sm:gap-5 items-start">
+            <div
+              key={label}
+              className="py-4 flex flex-col sm:grid sm:grid-cols-[140px_1fr] gap-1 sm:gap-5 items-start"
+            >
               <span className="text-xs text-muted tracking-[0.15em] uppercase font-mono">
                 {label}
               </span>

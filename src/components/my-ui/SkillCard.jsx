@@ -4,9 +4,7 @@ const SkillCard = ({ skill }) => {
   const { label, tags } = skill;
 
   return (
-    <div
-      className="flex h-full w-full flex-col rounded-2xl border border-primary/20 bg-card/60 p-4 shadow-[0_0_0_1px_rgba(26,184,184,0.04)] backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:bg-primary/[0.03] sm:p-5"
-    >
+    <div className="flex h-full w-full flex-col rounded-2xl border border-primary/20 bg-card/60 p-4 shadow-[0_0_0_1px_rgba(26,184,184,0.04)] backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:bg-primary/[0.03] sm:p-5">
       <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted sm:text-sm">
         {label}
       </h3>
