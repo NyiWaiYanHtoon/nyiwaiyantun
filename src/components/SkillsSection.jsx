@@ -12,7 +12,7 @@ const SkillsSection = ({ data, stickyTitle }) => {
           <br />
           <span className="text-primary">{headingAccent}</span>
         </h2>
-        <p className="max-w-xl text-sm leading-relaxed text-muted sm:text-base">
+        <p className="max-w-xl text-sm leading-relaxed text-muted sm:text-base mb-6">
           {subheading}
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:items-stretch">

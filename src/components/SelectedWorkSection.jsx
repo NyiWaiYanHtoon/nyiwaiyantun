@@ -13,7 +13,7 @@ const SelectedWorkSection = ({ data, stickyTitle }) => {
           <br />
           <span className="text-primary">{headingAccent}</span>
         </h2>
-        <p className="text-muted max-w-xl leading-relaxed">{subheading}</p>
+        <p className="text-muted max-w-xl leading-relaxed mb-6">{subheading}</p>
         {/* Projects list */}
         <div className="relative flex flex-col gap-10">
           {projects.map(

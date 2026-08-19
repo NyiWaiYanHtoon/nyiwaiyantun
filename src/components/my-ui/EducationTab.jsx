@@ -35,11 +35,6 @@ const EducationTab = ({ education }) => {
                     <span className="text-xl md:text-2xl leading-none">•</span>
                   )}
                   {degree}
-                  {fieldOfStudy && (
-                    <span className="text-muted font-normal">
-                      , {fieldOfStudy}
-                    </span>
-                  )}
                 </h3>
 
                 <p className="text-muted text-sm mt-2">

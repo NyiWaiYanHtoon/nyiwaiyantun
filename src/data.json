@@ -224,8 +224,7 @@
       {
         "id": "edu-1",
         "logo": "/images/mfu-logo.png",
-        "degree": "Bachelor of Engineering",
-        "fieldOfStudy": "Computer Engineering",
+        "degree": "B.Eng. Computer Engineering",
         "institution": "Mae Fah Luang University",
         "location": "Chiang Rai, TH",
         "dateRange": "2022 — 2026",
@@ -235,8 +234,7 @@
       {
         "id": "edu-2",
         "logo": "/images/uit-logo.png",
-        "degree": "Bachelor of Science",
-        "fieldOfStudy": "Computer Science",
+        "degree": "B.Sc. Computer Science",
         "institution": "University of Information Technology",
         "location": "Yangon, MM",
         "dateRange": "2019 — 2021",
