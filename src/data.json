@@ -219,6 +219,30 @@
         "company": "YOMA Bank",
         "description": "Provided technical support for software, hardware, and network issues while handling system setup, maintenance, and on-site and remote troubleshooting."
       }
+    ],
+    "education": [
+      {
+        "id": "edu-1",
+        "logo": "/images/mfu-logo.png",
+        "degree": "Bachelor of Engineering",
+        "fieldOfStudy": "Computer Engineering",
+        "institution": "Mae Fah Luang University",
+        "location": "Chiang Rai, TH",
+        "dateRange": "2022 — 2026",
+        "grade": "GPA 3.97/4.0",
+        "description": "Graduated with honors. MFU Scholarship recipient and teaching assistant for Web and Mobile Development."
+      },
+      {
+        "id": "edu-2",
+        "logo": "/images/uit-logo.png",
+        "degree": "Bachelor of Science",
+        "fieldOfStudy": "Computer Science",
+        "institution": "University of Information Technology",
+        "location": "Yangon, MM",
+        "dateRange": "2019 — 2021",
+        "grade": "discontinued",
+        "description": "Completed 1 year of study before moving abroad and starting a new journey. Participated in various coding competitions and workshops."
+      }
     ]
   },
 

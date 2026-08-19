@@ -4,7 +4,7 @@ import EducationTab from "@/components/my-ui/EducationTab";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const JourneySection = ({ data, stickyTitle }) => {
-  const { heading, headingAccent, subheading, experiences } = data;
+  const { heading, headingAccent, subheading, experiences, education } = data;
 
   return (
     <Section id="experience" title={stickyTitle}>
@@ -32,7 +32,7 @@ const JourneySection = ({ data, stickyTitle }) => {
             <ExperienceTab experiences={experiences} />
           </TabsContent>
           <TabsContent value="education" className="mt-0">
-            <EducationTab />
+            <EducationTab education={education} />
           </TabsContent>
         </Tabs>
       </div>
